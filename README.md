@@ -1,6 +1,6 @@
 # [Steve The caveman](http://stevethecaveman.com/) - Dorm Automation Tool
 
-[SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/) is an open source, admin dashboard template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+[STC](http://stevethecaveman.com/) is an open source, dorm automation tool for IoT devices created by [Jean-Marc Boullianne](http://whereisjmb.com/).
 
 ## Getting Started
 
@@ -15,13 +15,10 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 ## Creator
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+Steve The Caveman was created by and is maintained by **Jean-Marc Boullianne**, Undergraduate Student at the [University of Rochester](https://www.cs.rochester.edu/).
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+Steve The Caveman is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat) and the [SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/) theme created by **David Miller**.
 
 ## Copyright and License
 
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-sb-admin-2/blob/gh-pages/LICENSE) license.
+MIT License
