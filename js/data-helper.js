@@ -525,28 +525,20 @@ function refreshPage(){
 
 	//Media Main
 	refresh("media", 0);
-
 	//Light Main
 	refresh("lights", 100);
-
 	//Temp Main
 	refresh("temp", 200);
-
 	//Notification Main
 	refresh("notifications", 300);
-
 	//Phone Main
 	refresh("phone", 400);
-
 	//Motion Main
 	refresh("motion", 500);
-
 	//Contact Main
 	refresh("contact", 600);
-
 	//Class Main
 	refresh("schedule", 700);
-
 	
 	showMonitor($('#media-panel-main'), 0);
 	showMonitor($('#light-panel-main'), 100);
@@ -627,4 +619,21 @@ $(function() {
    	getPhoneMonitor('#phone-state-label');
    	//getNotificationController();
    	getScheduleMonitor('#class-state-label', '#class-state-label-minor');
+
+   	setInterval(function(){ refreshPage(); }, 60 * 1000);
+
+   	$(window).bind('keypress', function(e) {
+
+	    var code = (e.keyCode ? e.keyCode : e.which);
+	    console.log("Key Pressed: " + code);
+
+	});
+
+	$(window).bind('mousedown', function(e) {
+	    if(e.target.type == "button"){
+	    	console.log("button pressed");
+	    	refreshPage();
+	    }
+
+	});
 });
