@@ -1,4 +1,4 @@
-# [Steve The caveman](http://stevethecaveman.com/) - Dorm Automation Tool
+# [Steve The Caveman](http://stevethecaveman.com/) - Dorm Automation Tool
 
 [STC](http://stevethecaveman.com/) is an open source, dorm automation tool for IoT devices created by [Jean-Marc Boullianne](http://endlesssoundfeed.com/WIJMB/).
 
