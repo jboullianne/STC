@@ -467,8 +467,40 @@ function buildTempGraph(){
     }
 }
 
-function refresh(object, delay){
-	console.log(object.toString + " : Refreshed");
+function refresh(obj, delay){
+	delay += 500;
+	if(obj == "media")
+		setTimeout(function() {
+			getMediaController('#media-state-label', '#media-controller', 3, '#337ab7', 'white');
+		}, delay);
+	if(obj == "lights")
+		setTimeout(function() {
+			getLightController('#lights-state-label', '#light-controller', 3, '#5cb85c', 'white');
+		}, delay);
+	if(obj == "temp")
+		setTimeout(function() {
+			getTempMonitor('#temp-state-label', '#temp-monitor', 3, '#f0ad4e', 'white');
+		}, delay);
+	if(obj == "notifications")
+		setTimeout(function() {
+			//getNotificationController();
+		}, delay);
+	if(obj == "phone")
+		setTimeout(function() {
+			getPhoneMonitor('#phone-state-label');
+		}, delay);
+	if(obj == "motion")
+		setTimeout(function() {
+			getMotionMonitor('#motion-state-label');
+		}, delay);
+	if(obj == "contact")
+		setTimeout(function() {
+			getContactMonitor('#contact-state-label', '#contact-monitor', 3, '#84E066', 'white');
+		}, delay);
+	if(obj == "schedule")
+		setTimeout(function() {
+			getScheduleMonitor('#class-state-label', '#class-state-label-minor');
+		}, delay);
 }
 
 function hideMonitor(object, delay){
@@ -492,28 +524,28 @@ function refreshPage(){
 	hideMonitor($('#class-panel-main'), 700);
 
 	//Media Main
-	refresh($('#media-panel-main'), 0);
+	refresh("media", 0);
 
 	//Light Main
-	refresh($('#light-panel-main'), 100);
+	refresh("lights", 100);
 
 	//Temp Main
-	refresh($('#temp-panel-main'), 200);
+	refresh("temp", 200);
 
 	//Notification Main
-	refresh($('#notification-panel-main'), 300);
+	refresh("notifications", 300);
 
 	//Phone Main
-	refresh($('#phone-panel-main'), 400);
+	refresh("phone", 400);
 
 	//Motion Main
-	refresh($('#motion-panel-main'), 500);
+	refresh("motion", 500);
 
 	//Contact Main
-	refresh($('#contact-panel-main'), 600);
+	refresh("contact", 600);
 
 	//Class Main
-	refresh($('#class-panel-main'), 700);
+	refresh("schedule", 700);
 
 	
 	showMonitor($('#media-panel-main'), 0);
