@@ -239,7 +239,7 @@ function getTempMonitor(id_main, id_controller, size, color_primary, color_secon
 
 	    avg_temp += state;
 	    num_sensors++;
-
+	    var d = new Date();
 	    rHTML += '<div class="panel panel-default">' +
 	    			'<div class="panel-heading" style="overflow: hidden;">' + 
 	            		'<a data-toggle="collapse" data-parent="#temp" href="#temp' + device.id + k + '" class="">' +
@@ -248,14 +248,14 @@ function getTempMonitor(id_main, id_controller, size, color_primary, color_secon
 							'</div>' +
 						'</a>' +
 						'<div style="float: right; width: 10%">' +
-						'<button type="button" id="temp' + k + 'toggle"' +
-						' class="btn btn-outline btn-success btn-sm" style="position: relative; right: .3em;">'+ state + '&deg;</button>' +
+						'<a type="button" id="temp' + k + 'toggle"' +
+						' class="btn btn-outline btn-success btn-sm" style="position: relative; right: .3em;">'+ state + '&deg;</a>' +
 						'</div>' + 
 	    			'</div>' +
 	    			'<style> button { margin-right: 0.2em; } </style>' + 
 		    		'<div id="temp'+ device.id + k + '" class="panel-collapse collapse">' +
 		        		'<div class="panel-body">' +
-		        			'<h4><b>Last Updated:</b> 10:20 PM</h4>' +
+		        			'<h4><b>Last Updated: </b>' + d.getHours() + ':' + d.getMinutes() + '</h4>' +
 		        		'</div>' +
 		    		'</div>' +
 				'</div>';
