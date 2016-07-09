@@ -302,6 +302,7 @@ function getContactMonitor(id_main, id_controller, size, color_primary, color_se
 	    }else{
 	    	closed++;
 	    }
+	    var d = new Date();
 
 	    rHTML += '<div class="panel panel-default">' +
 	    			'<div class="panel-heading" style="overflow: hidden;">' + 
@@ -318,7 +319,7 @@ function getContactMonitor(id_main, id_controller, size, color_primary, color_se
 	    			'<style> button { margin-right: 0.2em; } </style>' + 
 		    		'<div id="contacts'+ device.id + k + '" class="panel-collapse collapse">' +
 		        		'<div class="panel-body">' +
-		        			'<h4><b>Last Updated:</b> 10:20 PM</h4>' +
+		        			'<h4><b>Last Updated: </b>' + d.getHours() + ':' + d.getMinutes() + '</h4>' +
 		        		'</div>' +
 		    		'</div>' +
 				'</div>';
